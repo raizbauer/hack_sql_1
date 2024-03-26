@@ -10,6 +10,7 @@ create table users(
  name varchar (50) not null,
  foreign key (id_country) references countries (id_country)   
 );
+-- ####### H2 part ######## --
 
 insert into countries (name) values ('argentina') , ('colombia'),('chile');
 select * from countries;
