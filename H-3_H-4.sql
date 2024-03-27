@@ -22,14 +22,14 @@ CREATE TABLE contact_request(
 -- ####### H4 part ######## --  
 
 INSERT INTO countries (id_country, name) 
-  VALUES (1, 'fooziman'), (2, 'barziman'), (3, 'goku'), (4, 'vegeta'), (5, 'popo');
+  VALUES (1, 'new york'), (2, 'california'), (3, 'boston'), (4, 'chicago'), (5, 'miami');
   
 INSERT INTO priorities (id_priority, type_name) 
-  VALUES (1, 'admin'), (2, 'user'), (3, 'Devops'), (4, 'QA'), (5, 'UX');
+  VALUES (1, 'VIP PRIORITY'), (2, 'HIGH PRIORITY'), (3, 'MID PRIORITY'), (4, 'COMMON PRIORITY');
 
 INSERT INTO contact_request (id_email, id_country, id_priority, name, detail, physical_address)
 VALUES ('fooziman@correo.com', 1, 1, 'fooziman', 'Solicitud de soporte técnico', 'Calle Principal, Edificio Centro'), 
-('barziman@correo.com', 2, 2, 'barziman', 'Interesado en vacante laboral', 'Avenida Universidad No. 56'),
-('goku@correo.com', 3, 3, 'goku', 'Permisos para servidor', 'Avenida Universidad No. 56'),
-('vegeta@correo.com', 4, 4, 'vegeta', 'Verificando errores', 'Avenida calicanto, Edificio Este'),
-('popo@correo.com', 5, 5, 'popo', 'peticion de acceso', 'Avenida reyes,  No. 1');
+('barziman@correo.com', 2, 2, 'barziman', 'Sistema no responde', 'Avenida Universidad No. 56'),
+('goku@correo.com', 3, 3, 'goku', 'Fallas de impresion', 'Avenida Universidad No. 56'),
+('vegeta@correo.com', 4, 4, 'vegeta', 'Discrepancia de datos', 'Avenida calicanto, Edificio Este'),
+('popo@correo.com', 5, 2, 'popo', 'No hay conexion', 'Avenida reyes,  No. 1');
