@@ -38,3 +38,12 @@ WHERE id_email = (
   ORDER BY name DESC
   LIMIT 1
 );
+
+UPDATE contact_request
+SET name = 'fooziman fooman'
+WHERE id_email = (
+  SELECT id_email
+  FROM contact_request
+  ORDER BY name ASC
+  LIMIT 1
+);
