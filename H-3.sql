@@ -13,12 +13,12 @@ create table contact_request(
   id_country serial not null,
   id_priority serial not null,
   name varchar(50) not null,
-  detail char (50),
-  physical_address varchar (250),
+  detail varchar (255) not null,
+  physical_address varchar (255) not null,
   FOREIGN KEY (id_country) REFERENCES countries (id_country),
   FOREIGN KEY (id_priority) REFERENCES priorities (id_priority)
-  )
+);
   
   
-  insert into countries (id_country, name) 
-  values (1, 'fooziman'), (2, 'barziman'), (3, 'goku'), (4, 'vegeta'), (5, 'popo'); 
+INSERT INTO countries (id_country, name) 
+  values (DEFAULT, 'fooziman'), (DEFAULT, 'barziman'), (DEFAULT, 'goku'), (DEFAULT, 'vegeta'), (DEFAULT, 'popo');
