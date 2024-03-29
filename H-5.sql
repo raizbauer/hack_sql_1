@@ -42,7 +42,7 @@ CREATE TABLE PRODUCTS (
   name VARCHAR (50) NOT NULL,
   details VARCHAR (50) NOT NULL,
   minimum_stock INT NOT NULL,
-  maximun_stock INT NOT NULL,
+  maximum_stock INT NOT NULL,
   current_stock INT NOT NULL,
   price FLOAT NOT NULL,
   price_with_tax FLOAT NOT NULL,
