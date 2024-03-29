@@ -30,6 +30,6 @@ INSERT INTO OFFERS (id_offer, status) VALUES (2, FALSE);
 INSERT INTO PRODUCTS (id_discount, id_offer, id_tax, name, details, minimum_stock, maximum_stock, current_stock, price, price_with_tax)
 VALUES (1, 1, 1, 'Camiseta', 'Algodón 100%', 5, 10, 7, 20.00, 22.40);
 INSERT INTO PRODUCTS (id_discount, id_offer, id_tax, name, details, minimum_stock, maximum_stock, current_stock, price, price_with_tax)
-VALUES (2, NULL, 2, 'Jeans', 'Negros clasicos', 3, 8, 5, 35.00, 37.80);
+VALUES (2, 2, 2, 'Jeans', 'Negros clasicos', 3, 8, 5, 35.00, 37.80);
 INSERT INTO PRODUCTS (id_discount, id_offer, id_tax, name, details, minimum_stock, maximum_stock, current_stock, price, price_with_tax)
 VALUES (3, 2, 1, 'Boxers', 'Largos', 2, 6, 4, 50.00, 56.00);
