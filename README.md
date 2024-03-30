@@ -26,7 +26,7 @@
 ## 🏆 H-1
 ![](https://github.com/SocialOplesk/hack_sql_1/blob/main/assets/register_database.png)
 
-![](https://github.com/SocialOplesk/hack_sql_1/blob/main/gifs/hack_sql_1_run_gif.gif)
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-1-01.png)
 ```sh
 
 design register database
@@ -54,7 +54,9 @@ create table users(
 
 
 ## 🏆 H-2
-![](https://github.com/SocialOplesk/hack_sql_1/blob/main/gifs/hack_sql_1_install_gif.gif)
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-1-02.png)
+
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-2-02.png)
 
 ```sh
 crud register database
@@ -95,7 +97,11 @@ tables:
 - table priorities
 - table contact_request
 ```
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-2-03.png)
 
+
+
+![](https://github.com/SocialOplesk/hack_sql_1/blob/main/assets/contact_database.png)
 
 ## 🏆 H-4
 ```sh
