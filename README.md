@@ -103,11 +103,8 @@ tables:
 - table priorities
 - table contact_request
 ```
-![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-2-03.png)
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-3_H-4.png)
 
-
-
-![](https://github.com/SocialOplesk/hack_sql_1/blob/main/assets/contact_database.png)
 
 ## 🏆 H-4
 ```sh
@@ -124,6 +121,7 @@ crud contact database
 ✔update:
 - update first user:
 ```
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-3_H-4.png)
 
 
 ## 🏆 H-5
@@ -145,7 +143,8 @@ tables:
 - table invoices
 - table orders
 ```
-
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-5_pt1.png)
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-5_pt2.png)
 
 ## 🏆 H-6
 ```sh
@@ -154,7 +153,10 @@ crud ecommerce database
 ✔insert:
 - insert 3 record in all tables
 - create 3 invoices
-
+```
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-6_pt1.png)
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-6_pt2.png)
+```sh
 ✔delete:
 - delete last first user:
 
@@ -162,7 +164,10 @@ crud ecommerce database
 - update last user:
 - update all taxes:
 - update all prices
+```
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-6_pt3.png)
 
+```sh
 -----------------
 ⚡ example script
 
