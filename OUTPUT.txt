@@ -1,0 +1,147 @@
+Output:
+
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ id_discount | status | percentage 
+-------------+--------+------------
+           1 | t      |        0.1
+           2 | f      |       0.05
+           3 | t      |       0.15
+(3 rows)
+
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ id_tax | percentage 
+--------+------------
+      1 |       0.12
+      2 |       0.08
+      3 |       0.16
+(3 rows)
+
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ id_role |     name      
+---------+---------------
+       1 | Administrador
+       2 | Cliente
+       3 | Vendedor
+(3 rows)
+
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ id_country |      name      
+------------+----------------
+          1 | Venezuela
+          2 | Colombia
+          3 | Estados Unidos
+(3 rows)
+
+INSERT 0 1
+INSERT 0 1
+ id_invoice_status | status 
+-------------------+--------
+                 1 | t
+                 2 | f
+(2 rows)
+
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ id_payment |        type        
+------------+--------------------
+          1 | Efectivo
+          2 | Tarjeta de Crédito
+          3 | Débito
+(3 rows)
+
+INSERT 0 1
+INSERT 0 1
+ id_offer | status 
+----------+--------
+        1 | t
+        2 | f
+(2 rows)
+
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ id_product | id_discount | id_offer | id_tax |   name   |     details     | minimum_stock | maximum_stock | current_stock | price | price_with_tax 
+------------+-------------+----------+--------+----------+-----------------+---------------+---------------+---------------+-------+----------------
+          1 |           1 |        1 |      1 | Camiseta | Algodón 100%    |             5 |            10 |             7 |    20 |           22.4
+          2 |           2 |        2 |      2 | Jeans    | Negros clasicos |             3 |             8 |             5 |    35 |           37.8
+          3 |           3 |        2 |      1 | Boxers   | Largos          |             2 |             6 |             4 |    50 |             56
+(3 rows)
+
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+         email         | id_country | id_role |  name  | age |          password           |          physical_address          
+-----------------------+------------+---------+--------+-----+-----------------------------+------------------------------------
+ goku@correo.com       |          1 |       2 | goku   |  30 | GohaGotenMilk123            | Calle Principal, Edificio XYZ
+ vegeta@correo.com     |          2 |       2 | vegeta |  25 | TeOdioKakarotox100Pre       | Avenida CorpCasule, Torre A
+ misterpopo@correo.com |          3 |       2 | popo   |  25 | miclaveSecretaAunMasSecreta | Avenida del kaio sama, Torre karin
+(3 rows)
+
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ id_invoice |      id_costumer      | id_payment | id_invoice_status |    date    | total_to_pay 
+------------+-----------------------+------------+-------------------+------------+--------------
+          1 | goku@correo.com       |          1 |                 1 | 2024-03-29 |            0
+          2 | vegeta@correo.com     |          2 |                 1 | 2024-03-29 |            0
+          3 | misterpopo@correo.com |          3 |                 1 | 2024-03-29 |            0
+(3 rows)
+
+DELETE 1
+         email         | id_country | id_role |  name  | age |          password           |          physical_address          
+-----------------------+------------+---------+--------+-----+-----------------------------+------------------------------------
+ vegeta@correo.com     |          2 |       2 | vegeta |  25 | TeOdioKakarotox100Pre       | Avenida CorpCasule, Torre A
+ misterpopo@correo.com |          3 |       2 | popo   |  25 | miclaveSecretaAunMasSecreta | Avenida del kaio sama, Torre karin
+(2 rows)
+
+UPDATE 1
+         email         | id_country | id_role |  name  | age |          password           |          physical_address          
+-----------------------+------------+---------+--------+-----+-----------------------------+------------------------------------
+ vegeta@correo.com     |          2 |       2 | vegeta |  25 | TeOdioKakarotox100Pre       | Avenida CorpCasule, Torre A
+ misterpopo@correo.com |          3 |       2 | popo   |  40 | miclaveSecretaAunMasSecreta | Avenida del kaio sama, Torre karin
+(2 rows)
+
+UPDATE 1
+UPDATE 1
+UPDATE 1
+ id_tax | percentage 
+--------+------------
+      1 |       0.08
+      2 |       0.05
+      3 |       0.12
+(3 rows)
+
+UPDATE 1
+UPDATE 1
+UPDATE 1
+ id_product | id_discount | id_offer | id_tax |   name   |     details     | minimum_stock | maximum_stock | current_stock | price | price_with_tax 
+------------+-------------+----------+--------+----------+-----------------+---------------+---------------+---------------+-------+----------------
+          1 |           1 |        1 |      1 | Camiseta | Algodón 100%    |             5 |            10 |             7 |    21 |           22.4
+          2 |           2 |        2 |      2 | Jeans    | Negros clasicos |             3 |             8 |             5 |    32 |           37.8
+          3 |           3 |        2 |      1 | Boxers   | Largos          |             2 |             6 |             4 |    45 |             56
+(3 rows)
+
