@@ -26,7 +26,6 @@
 ## 🏆 H-1
 ![](https://github.com/SocialOplesk/hack_sql_1/blob/main/assets/register_database.png)
 
-![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-1-01.png)
 ```sh
 
 design register database
@@ -51,13 +50,10 @@ create table users(
  foreign key (id_country) references countries (id_country)   
 );
 ```
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-1-02.png)
 
 
 ## 🏆 H-2
-![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-1-02.png)
-
-![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-2-02.png)
-
 ```sh
 crud register database
 
@@ -68,23 +64,33 @@ crud register database
 - insert into countries (name) values ('argentina') , ('colombia'),('chile');
 - select * from countries;
 
+```
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-2-01.png)
+```sh
 - insert into users (id_country, email, name) 
   values (2, 'foo@foo.com', 'fooziman'), (3, 'bar@bar.com', 'barziman'); 
 - select * from users;
-
+```
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-2-02.png)
+```sh
 ✔ delete:
 - delete from users where email = 'bar@bar.com';
-
+```
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-2-03.png)
+```sh
 ✔ update:
 - update users set email = 'foo@foo.foo', name = 'fooz' where id_users = 1;
 - select * from users;
-
+```
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-2-04.png)
+```sh
 ✔select:
 - select * from users inner join  countries on users.id_country = countries.id_country;
 
 - select u.id_users as id, u.email, u.name as fullname, c.name 
   from users u inner join  countries c on u.id_country = c.id_country;
 ```
+![](https://github.com/raizbauer/hack_sql_1/blob/main/captures/H-2-05.png)
 
 
 ## 🏆 H-3
