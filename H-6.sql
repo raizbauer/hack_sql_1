@@ -91,7 +91,7 @@ SELECT * FROM CUSTOMERS;
 
 UPDATE TAXES SET percentage = 0.08 WHERE id_tax = 1;
 UPDATE TAXES SET percentage = 0.05 WHERE id_tax = 2;
-UPDATE TAXES SET percentage = 0.012 WHERE id_tax = 3;
+UPDATE TAXES SET percentage = 0.12 WHERE id_tax = 3;
 
 SELECT * FROM TAXES;
 
