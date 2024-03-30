@@ -78,7 +78,7 @@ CREATE TABLE INVOICES (
   date DATE NOT NULL,
   total_to_pay FLOAT,
   FOREIGN KEY (id_invoice) REFERENCES INVOICES (id_invoice),
-  FOREIGN KEY (id_costumer) REFERENCES CUSTOMERS (email),
+  FOREIGN KEY (id_costumer) REFERENCES CUSTOMERS (email) ON DELETE CASCADE,
   FOREIGN KEY (id_payment) REFERENCES PAYMENTS (id_payment),
   FOREIGN KEY (id_invoice_status) REFERENCES INVOICE_STATUS (id_invoice_status)
 );
@@ -90,6 +90,6 @@ CREATE TABLE ORDERS (
   detail VARCHAR (255) NOT NULL,
   amount INT NOT NULL,
   price FLOAT NOT NULL,
-  FOREIGN KEY (id_invoice) REFERENCES INVOICES (id_invoice),
+  FOREIGN KEY (id_invoice) REFERENCES INVOICES (id_invoice) ON DELETE CASCADE,
   FOREIGN KEY (id_product) REFERENCES PRODUCTS (id_product)
 );
